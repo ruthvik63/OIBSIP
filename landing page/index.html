@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee </h2>
+                <h2>It's <span> Starbucks </span></h2>  
+                <p>Starbucks was founded by Jerry Baldwin, Gordon Bowker, and Zev Siegl, opening its first store in 1971 near the historic Pike Place Market in Seattle.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="landing page3.png">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="landing page1.png" onclick="imgSlider('landing page1.png');changeCircleColor('#017143')"></li>
+            <li><img src="landing page2.png" onclick="imgSlider('landing page2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="landing page3.png" onclick="imgSlider('landing page3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    </section>
+    <script types="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
+
+
+
