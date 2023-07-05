@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monoscope';
+    text-decoration: none;
+}
+body{
+    background-color: #EEEEEE;
+    margin:5% 10%;
+    text-align: center;
+}
+#nav{
+    background-color: #6e0a50;
+    border-radius: 5px;
+}
+#nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+#nav ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 18px;
+    color: lightpink;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#nav ul li:hover{
+    background-color:rgb(207, 140, 195);
+}
+.active{
+    background-color: rgb(207, 140, 195);
+}
+#nav ul li a{
+    color: white;
+}
+
+#temperature{
+    background-color:#4f843c;;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow:3px 3px 5px #525FE1;
+}
+#celcius,#fahrenheit,#kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px ;
+    box-shadow:3px 3px 6px #0E2954;
+    border-radius: 8px;
+}
+#temperature input{
+    flex: 5;
+    height: 60px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+    font-size: 24px;
+}
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background-color:#2ea4b3;
+    color: white;
+    border-radius: 0 8px 8px 0;
+}
+#btn-temperature{
+    margin-top: 25px;
+    text-align: center;
+}
+#btn-temperature button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 4px #0e544f;
+}
+#btn-temperature button:hover{
+    background:#20b5a1;
+    color: white;
+}
